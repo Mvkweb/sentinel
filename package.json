@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@types/node": "^22.15.23",
+    "discord.js": "^14.19.3",
+    "typescript": "^5.8.3",
+    "yaml": "^2.8.0"
+  },
+  "name": "sentinel",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build:linux": "bun build src/index.ts --compile --target=bun-linux-x64 --minify --sourcemap --bytecode --outfile bot",
+    "build:macos": "bun build src/index.ts --compile --target=bun-darwin-x64 --minify --sourcemap --bytecode --outfile bot",
+    "build:windows": "bun build src/index.ts --compile --target=bun-windows-x64 --minify --sourcemap --bytecode --outfile bot.exe",
+    "build": "node build.js",
+    "start": "bun run src/index.ts"
+  }
+}
