@@ -1,0 +1,6 @@
+name: sentinel
+version: '1.0'
+main: org.sentinel.sentinel.Sentinel
+api-version: '1.21'
+authors: [ Mvk ]
+description: Sentinel is a cross-platform moderation tool for Minecraft and Discord. Keeping your servers safe and under control. 
